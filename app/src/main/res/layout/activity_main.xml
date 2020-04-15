@@ -36,6 +36,7 @@
         android:layout_marginTop="108dp"
         android:layout_marginLeft="30dp"
         android:text="Tambah Menu"
+        android:background="@color/colorPrimaryDark"
         android:textAllCaps="false"
         android:textSize="10sp" />
 
@@ -47,6 +48,7 @@
         android:layout_marginTop="108dp"
         android:layout_marginRight="30dp"
         android:text="Tampil Daftar Menu"
+        android:background="@color/colorPrimary"
         android:textAllCaps="false"
         android:textSize="10sp" />
 
