@@ -14,7 +14,8 @@ public class Tampil {
 
         @Override
                 public String toString(){
-            return "Id : " + Id + "" + "\n" + "Nama : " + Nama + "" + "\n" + "Harga : " + Harga + "" + "\n" + "Deskripsi : " + Deskripsi + "" ;
+            return "Id : " + Id + "" + "\n" + "Nama : " + Nama + "" + "\n" + "Harga : " + Harga + "" + "\n" +
+                    "Deskripsi : " + Deskripsi + "" ;
 
         }
     }

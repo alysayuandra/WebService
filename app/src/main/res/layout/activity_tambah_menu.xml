@@ -61,7 +61,7 @@
         android:layout_below="@id/edit_desk"
         android:text="Kembali"
         android:textAllCaps="false"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         />
 
     <Button
@@ -73,6 +73,8 @@
         android:textAllCaps="false"
         android:layout_alignParentLeft="true"
         />
+
+
 
 
 

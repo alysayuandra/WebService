@@ -1,8 +1,10 @@
 package com.example.webservice_daftarmakanan;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.renderscript.ScriptGroup;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +19,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -79,7 +80,7 @@ public class InputDaftarMenu extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         Toast.makeText(InputDaftarMenu.this, "Error" + error, Toast.LENGTH_LONG).show();
                     }
-                }) {
+                }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -92,5 +93,7 @@ public class InputDaftarMenu extends AppCompatActivity {
             }
         };
         requestQueue.add(stringRequest);
+        requestQueue.start();
     }
+
 }

@@ -14,6 +14,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,7 +45,7 @@ public class TampilDaftarMenu extends AppCompatActivity {
     }
 
     void tampilDaftarMenu(){
-        String URL_TAMPIL  = "http://localhost/menuMakanan/tampil_menu.php";
+        String URL_TAMPIL  = "http://10.0.2.2/menuMakanan/tampil_menu.php";
         stringRequest = new StringRequest(Request.Method.GET, URL_TAMPIL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -60,6 +61,7 @@ public class TampilDaftarMenu extends AppCompatActivity {
                 });
         requestQueue.add(stringRequest);
         }
+
     void aturJson(){
         try {
             JSONObject jsonObject = new JSONObject(stringBuffer.toString());
@@ -82,4 +84,5 @@ public class TampilDaftarMenu extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
 }

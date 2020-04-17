@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Daftar Menu Makanan Pizza Hut"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"
          />
 
@@ -34,11 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="108dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:text="Tambah Menu"
-        android:background="@color/colorPrimaryDark"
         android:textAllCaps="false"
-        android:textSize="10sp" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btn_tampil_menu"
@@ -46,11 +45,23 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="108dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginRight="10dp"
         android:text="Tampil Daftar Menu"
-        android:background="@color/colorPrimary"
         android:textAllCaps="false"
-        android:textSize="10sp" />
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_hapus"
+        android:layout_below="@+id/btn_input_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginRight="10dp"
+        android:text="Hapus"
+        android:textAllCaps="false"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"
+        />
 
 
 </RelativeLayout>
