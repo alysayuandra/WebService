@@ -56,7 +56,6 @@ public class HapusMenu extends AppCompatActivity {
         pd.setMessage("Hapus data ...");
         pd.setCancelable(false);
         pd.show();
-//        final String Id = editId.getText().toString().trim();
 
         stringRequest= new StringRequest(Request.Method.POST,Hapus.HAPUS_URL,
                 new Response.Listener<String>() {

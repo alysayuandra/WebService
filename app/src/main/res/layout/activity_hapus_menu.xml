@@ -7,8 +7,19 @@
     tools:context=".HapusMenu"
     >
 
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus Daftar Menu"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
     <EditText
         android:id="@+id/editId"
+        android:layout_below="@+id/judul1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukan Id"
@@ -23,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="Hapus"
         android:textAllCaps="false"
-        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
         />
 
 </RelativeLayout>

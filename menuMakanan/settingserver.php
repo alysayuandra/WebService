@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST') {
 	$id = $_POST['Id'];
 	$nama_mkn = $_POST['Nama'];
 	$harga_mkn = $_POST['Harga'];
-        $desk_mkn = $_POST['Deskripsi'];
+    $desk_mkn = $_POST['Deskripsi'];
 	
 $sql = "INSERT INTO menu VALUES('".$id."','".$nama_mkn."','".$harga_mkn."', '".$desk_mkn."')";
 $result = mysqli_query($conn, $sql);

@@ -1,5 +1,6 @@
 package com.example.webservice_daftarmakanan;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -19,6 +20,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -58,6 +63,7 @@ public class InputDaftarMenu extends AppCompatActivity {
         });
     }
 
+
     void simpan() {
         final String Id = editId.getText().toString().trim();
         final String Nama = editNama.getText().toString().trim();
@@ -80,7 +86,7 @@ public class InputDaftarMenu extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         Toast.makeText(InputDaftarMenu.this, "Error" + error, Toast.LENGTH_LONG).show();
                     }
-                }){
+                }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -94,6 +100,7 @@ public class InputDaftarMenu extends AppCompatActivity {
         };
         requestQueue.add(stringRequest);
         requestQueue.start();
+
     }
 
 }

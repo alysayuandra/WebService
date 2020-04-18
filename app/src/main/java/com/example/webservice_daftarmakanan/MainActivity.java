@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button inputMenu, tampilMenu, hapusMenu;
+    private Button inputMenu, tampilMenu, hapusMenu, ubahMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         inputMenu = findViewById(R.id.btn_input_menu);
         tampilMenu = findViewById(R.id.btn_tampil_menu);
         hapusMenu = findViewById(R.id.btn_hapus);
+        ubahMenu = findViewById(R.id.btn_edit);
 
        inputMenu.setOnClickListener(new View.OnClickListener(){
            @Override
@@ -43,5 +44,12 @@ public class MainActivity extends AppCompatActivity {
                startActivity(iHapus);
            }
        });
+        ubahMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iUbah = new Intent(MainActivity.this, UbahMenu.class);
+                startActivity(iUbah);
+            }
+        });
     }
 }
